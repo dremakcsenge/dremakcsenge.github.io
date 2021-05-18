@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <header>
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png">
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png">
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png">
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png"> 
+  </header>                                                        
+<style>
+}
+  body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.kép {
+  width:100%;
+  height: auto;
+}
+.navigáció {
+  overflow: hidden;
+  background-color: rgb(153,217,234);
+}
+.navigáció a {
+  float: right;
+  color: darkblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navigáció a:hover {
+  background-color: white;
+  color: black;
+}
+.navigáció a.aktív {
+  background-color: orange;
+  color: white;
+}
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin: 50px}
+.Képek {display: none}
+img {vertical-align: middle;}
+
+
+.diavetítő {
+  max-width: 500px;
+  position: relative;
+  margin: 0px;
+  width:100%;
+  height:100%;
+  margin-left: 450px;
+  margin-top: 40px;
+  
+}
+
+.előző,.következő {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.következő {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.előző:hover, .következő:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.számozás {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.pötty {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 100 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.aktív, .pötty:hover {
+  background-color: #717171;
+}
+.halvány {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .előző, .következő,.szöveg {font-size: 11px}
+}
+
+.lábléc {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  rgb(153,217,234);
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color:rgb(153,217,234);">
+  <div class="navigáció">
+  <a href="C:\Users\drema\Desktop\University\2. semester\Subjects\Mechanical IT\Portfolio\index.html">Főoldal</a>
+  <a href="C:\Users\drema\Desktop\University\2. semester\Subjects\Mechanical IT\Portfolio\dokumentacio.html">Dokumentáció</a>
+  <a href="C:\Users\drema\Desktop\University\2. semester\Subjects\Mechanical IT\Portfolio\kapcsolat.html">Kapcsolat</a>
+  <a class="aktív" href="C:\Users\drema\Desktop\University\2. semester\Subjects\Mechanical IT\Portfolio\galeria.html">Galéria</a>
+  <a href="C:\Users\drema\Desktop\University\2. semester\Subjects\Mechanical IT\Portfolio\bemutatkozas.html">Rólam</a>
+  </div>
+
+<div class="diavetítő">
+<div class="Képek halvány">
+  <div class="számozás">1 / 15</div>
+  <img src="css/képek/1.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">2 / 15</div>
+  <img src="css/képek/2.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">3 / 15</div>
+  <img src="css/képek/4.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">4 / 15</div>
+  <img src="css/képek/9.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">5 / 15</div>
+  <img src="css/képek/12.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">6 / 15</div>
+  <img src="css/képek/16.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">7 / 15</div>
+  <img src="css/képek/28.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">8 / 15</div>
+  <img src="css/képek/30.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">9 / 15</div>
+  <img src="css/képek/27.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">10 / 15</div>
+  <img src="css/képek/33.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">11 / 15</div>
+  <img src="css/képek/37.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">12 / 15</div>
+  <img src="css/képek/40.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">13 / 15</div>
+  <img src="css/képek/43.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">14 / 15</div>
+  <img src="css/képek/50.jpg" style="width:100%">
+</div>
+<div class="Képek halvány">
+  <div class="számozás">15 / 15</div>
+  <img src="css/képek/52.jpg" style="width:100%">
+</div>
+<div>
+<a class="előző" onclick="plusSlides(-1)">&#10094;</a>
+<a class="következő" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="pötty" onclick="currentSlide(1)"></span> 
+  <span class="pötty" onclick="currentSlide(2)"></span> 
+  <span class="pötty" onclick="currentSlide(3)"></span> 
+  <span class="pötty" onclick="currentSlide(4)"></span> 
+  <span class="pötty" onclick="currentSlide(5)"></span> 
+  <span class="pötty" onclick="currentSlide(6)"></span> 
+  <span class="pötty" onclick="currentSlide(7)"></span> 
+  <span class="pötty" onclick="currentSlide(8)"></span> 
+  <span class="pötty" onclick="currentSlide(9)"></span> 
+  <span class="pötty" onclick="currentSlide(10)"></span> 
+  <span class="pötty" onclick="currentSlide(11)"></span> 
+  <span class="pötty" onclick="currentSlide(12)"></span> 
+  <span class="pötty" onclick="currentSlide(13)"></span> 
+  <span class="pötty" onclick="currentSlide(14)"></span> 
+  <span class="pötty" onclick="currentSlide(15)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Képek");
+  var dots = document.getElementsByClassName("pötty");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" aktív", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " aktív";
+}
+</script>
+<div class="lábléc">
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png">
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png">
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png">
+  <img src="css/képek/névtelen.png">
+  <img src="css/képek/névtelen2.png">
+  <img src="css/képek/névtelen3.png">
+  
+</div>
+
+</body>
+<footer>
+
+</footer>
+</html> 
